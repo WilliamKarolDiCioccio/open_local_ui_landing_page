@@ -49,8 +49,22 @@ import SpeedInsights from '@vercel/speed-insights/astro'
       AOS.init()
     </script>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src='https://www.googletagmanager.com/gtag/js?id=G-29MGHZ9H48'
+    ></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-29MGHZ9H48')
+    </script>
+
     <!-- Vanilla Tilt -->
     <script
+      async
       src='https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js'
     ></script>
   </body>
