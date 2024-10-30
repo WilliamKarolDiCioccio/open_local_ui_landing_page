@@ -7,6 +7,7 @@ import Screenshots from '../components/Screenshots.svelte'
 import Footer from '../components/Footer.astro'
 import Roadmap from '../components/Roadmap.astro'
 import About from '../components/About.svelte'
+import GetStarted from '../components/GetStarted.svelte'
 ---
 
 <BaseLayout>
@@ -17,6 +18,7 @@ import About from '../components/About.svelte'
     <Features />
     <Screenshots client:only='svelte' />
     <Roadmap />
+    <GetStarted client:only='svelte' />
   </main>
   <Footer />
 </BaseLayout>

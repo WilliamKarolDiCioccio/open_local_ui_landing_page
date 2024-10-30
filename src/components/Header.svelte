@@ -57,7 +57,7 @@
     <nav class="hidden lg:flex space-x-8 items-center">
       <ul class="flex space-x-6">
         <li>
-          <a href="#about" class="emphasized-nav-link">Get Started</a>
+          <a href="#get-started" class="emphasized-nav-link">Get Started</a>
         </li>
         <li>
           <a href="/" class="emphasized-nav-link cursor-not-allowed opacity-50"

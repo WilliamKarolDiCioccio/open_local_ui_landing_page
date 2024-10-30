@@ -1,11 +1,5 @@
 <script>
   import { Icon } from 'svelte-materialdesign-icons'
-  import { Modals, closeModal, openModal, modals } from 'svelte-modals'
-  import Modal from './DownloadsModal.svelte'
-
-  function handleOpen() {
-    openModal(Modal, {})
-  }
 
   // Step 1: Define the array of objects
   const cards = [
@@ -64,50 +58,6 @@
             </div>
           </div>
         {/each}
-      </div>
-
-      <!-- Call to Action Button -->
-      <div class="mt-12" data-aos="fade-up" data-aos-delay="900">
-        <button
-          id="cta-button"
-          type="button"
-          class="text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 p-2 group"
-          on:click={() => handleOpen()}
-          data-aos="fade-up"
-          data-aos-delay="600"
-        >
-          <div class="flex flex-row items-center">
-            Download the Installer
-
-            <!-- Alpha Version Warning -->
-            <div
-              class="ml-2 text-xs bg-stone-900 text-white px-2 py-1 rounded-full"
-            >
-              Alpha
-            </div>
-
-            <div
-              class="ml-0 w-0 overflow-hidden transition-all duration-300 group-hover:ml-2 group-hover:w-5"
-            >
-              <Icon class="w-5 h-5" name="download" />
-            </div>
-          </div>
-        </button>
-      </div>
-
-      <!-- Quote block -->
-      <div class="mt-12 mx-auto w-9/12" data-aos="fade-up" data-aos-delay="900">
-        <blockquote class="italic text-sm md:text-base text-gray-300">
-          “ Many people think that open source projects are sort of chaotic and
-          anarchistic. They think that developers randomly throw code at the
-          code base and see what sticks. But that’s not true. Open source
-          projects are highly collaborative and disciplined, and they produce
-          some of the most robust and reliable software in the world. ”
-        </blockquote>
-        <footer class="mt-2 text-sm md:text-base text-gray-400">
-          Mitchell Baker (Chairwoman of the Mozilla Foundation and CEO of the
-          Mozilla Corporation)
-        </footer>
       </div>
     </div>
   </div>

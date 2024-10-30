@@ -41,7 +41,9 @@ const features = [
             class='p-0.5 rounded-lg relative overflow-hidden shining-card-border-interaction'
           >
             <div class='p-6 w-full h-full rounded-lg bg-gradient-to-br from-gray-800/65 via-stone-900/65 to-gray-700/65 backdrop-blur-lg border border-white border-opacity-25'>
-              <Icon class='w-12 h-12 text-white mb-4' name={feature.icon} />
+              <div class='w-16 h-16 mb-4 rounded-full bg-gradient-to-br from-yellow-300 via-orange-500 to-purple-500 flex items-center justify-center'>
+                <Icon class='w-8 h-8 text-white' name={feature.icon} />
+              </div>
               <h3 class='text-xl font-semibold mb-2 text-white'>
                 {feature.title}
               </h3>
